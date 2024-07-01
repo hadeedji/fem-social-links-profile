@@ -12,6 +12,11 @@
     "tailwindcss": "^3.4.4",
     "vite": "^5.3.2"
   },
+  "prettier": {
+    "plugins": [
+      "prettier-plugin-tailwindcss"
+    ]
+  },
   "postcss": {
     "plugins": {
       "tailwindcss": {},

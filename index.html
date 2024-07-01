@@ -11,19 +11,83 @@
       sizes="32x32"
       href="/images/favicon-32x32.png"
     />
-    <link rel="stylesheet" href="styles.css" />
+
+    <style>
+      @tailwind base;
+      @tailwind components;
+      @tailwind utilities;
+
+      @layer base {
+        @font-face {
+          font-weight: 100 900;
+          src: url("/fonts/Inter-VariableFont_slnt,wght.ttf") format("truetype");
+          font-family: "Inter";
+        }
+      }
+    </style>
   </head>
   <body>
-    <p>Jessica Randall</p>
-    <p>London, United Kingdom</p>
-    <p>"Front-end developer and avid reader."</p>
+    <div class="flex min-h-screen items-center justify-center bg-black p-6">
+      <main
+        class="flex w-full max-w-sm flex-col items-center gap-6 rounded-xl bg-dark-grey p-6 text-white sm:p-10"
+      >
+        <img
+          class="rounded-full"
+          width="88"
+          height="88"
+          src="/images/avatar-jessica.jpeg"
+          alt="Jessica's picture"
+        />
 
-    <ul>
-      <li>GitHub</li>
-      <li>Frontend Mentor</li>
-      <li>LinkedIn</li>
-      <li>Twitter</li>
-      <li>Instagram</li>
-    </ul>
+        <div class="flex flex-col items-center gap-1">
+          <p class="text-heading">Jessica Randall</p>
+          <p class="text-body-bold text-neon-green">London, United Kingdom</p>
+        </div>
+
+        <p class="text-body-regular">"Front-end developer and avid reader."</p>
+
+        <ul class="w-full space-y-4">
+          <li>
+            <a
+              class="block cursor-pointer rounded-lg bg-grey py-3 text-center text-body-bold hover:bg-neon-green hover:text-grey"
+            >
+              GitHub
+            </a>
+          </li>
+
+          <li>
+            <a
+              class="block cursor-pointer rounded-lg bg-grey py-3 text-center text-body-bold hover:bg-neon-green hover:text-grey"
+            >
+              Frontend Mentor
+            </a>
+          </li>
+
+          <li>
+            <a
+              class="block cursor-pointer rounded-lg bg-grey py-3 text-center text-body-bold hover:bg-neon-green hover:text-grey"
+            >
+              LinkedIn
+            </a>
+          </li>
+
+          <li>
+            <a
+              class="block cursor-pointer rounded-lg bg-grey py-3 text-center text-body-bold hover:bg-neon-green hover:text-grey"
+            >
+              Twitter
+            </a>
+          </li>
+
+          <li>
+            <a
+              class="block cursor-pointer rounded-lg bg-grey py-3 text-center text-body-bold hover:bg-neon-green hover:text-grey"
+            >
+              Instagram
+            </a>
+          </li>
+        </ul>
+      </main>
+    </div>
   </body>
 </html>
